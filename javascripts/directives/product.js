@@ -4,7 +4,8 @@ storefront.directive('product', function() {
     restrict: "E",
     replace: true,
     scope: {
-      product: "="
+      product: "=",
+      addToCart: "&"
     }
   };
 });
