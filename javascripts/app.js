@@ -8,12 +8,19 @@ storefront.config(function($stateProvider, $urlRouterProvider) {
   // state definitions
   $stateProvider
     .state('products', {
-      templateUrl: "javascripts/templates/products.html",
-      url: "/products"
+      url: "/products",
+      templateUrl: "javascripts/templates/products.html"
     })
 
     .state('products.index', {
       url: "/index",
+      templateUrl: "javascripts/templates/productsIndex.html",
       controller: "storeCtrl"
+    })
+
+    .state('products.show', {
+      url: "/:productId",
+      templateUrl: "javascripts/templates/product.html",
+      controller: "productCtrl"
     })
 })

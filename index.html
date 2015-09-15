@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body ng-controller="storeCtrl">
+<body>
 
   <header class="container-fluid">
     <div class="row">
@@ -35,7 +35,7 @@
     </div>
   </header>
 
-  <div class="row">
+  <div class="row" ng-controller="storeCtrl">
     <section class="col-sm-3 filter">
       <select ng-model="filterType">
         <option ng-repeat="option in products | unique: 'category'" value="{{option.category.name}}">{{option.category.name}}</option>
@@ -73,6 +73,7 @@
 
 <!-- controllers -->
 <script src="javascripts/controllers/storeCtrl.js"></script>
+<script src="javascripts/controllers/productCtrl.js"></script>
 
 <!-- services -->
 <script src="javascripts/services/products.js"></script>

@@ -1,6 +1,6 @@
 <section class="col-sm-4">
   <div class="product-listing">
-    <h4 class="product-name">{{ product.name }}</h4>
+    <h4 class="product-name"><a ui-sref="products.show({productId: product.id})">{{ product.name }}</a></h4>
     <img class="img-responsive" src="https://cldup.com/ShPQGnEA1I.jpg">
     <button class="btn btn-warning cart">Add to cart</button>
   </div>
