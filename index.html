@@ -6,12 +6,56 @@
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <header class="container-fluid">
+    <div class="row">
+      <section class="col-sm-12 header">
+        <h1 class="title">The Viking Store</h1>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="col-sm-12 subheader">
+        <h3 class="subtitle">The Best Viking Gear on the Whole Web</h3>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="col-sm-12 call-to-action">
+        <p class="action"><em>Choose from among our lineup of fine items below</em></p>
+      </section>
+    </div>
+  </header>
+
   <div ui-view>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12 text-right admin-login">
+          <p><a href="#">Admin Login</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 text-center contact-info">
+          <p class="contact-header">CONTACT</p>
+          <p>1 - 000 - 000 - 0000</p>
+          <p>contact@vikingstore.com</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 

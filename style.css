@@ -1,0 +1,67 @@
+.header {
+  margin-top: 50px;
+  margin-bottom: 75px;
+  text-align: center; }
+  .header .title {
+    font-size: 100px; }
+
+.subheader {
+  background-color: grey;
+  text-align: center;
+  padding: 20px 0 30px 0; }
+  .subheader .subtitle {
+    font-size: 42px;
+    color: white; }
+
+.flashes {
+  text-align: center;
+  margin-top: 15px;
+  padding: -5px; }
+
+.call-to-action {
+  box-sizing: border-box;
+  border-bottom: 3px solid grey;
+  text-align: center;
+  padding: 10px 0 10px 0; }
+  .call-to-action .action {
+    font-size: 32px;
+    color: grey; }
+
+.filter {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: right; }
+  .filter .filter-text {
+    font-size: 18px; }
+
+.product-listing {
+  text-align: center;
+  background-color: grey;
+  padding: 10px;
+  margin-bottom: 30px; }
+  .product-listing .product-name {
+    padding: 10px;
+    background-color: grey;
+    color: white; }
+  .product-listing .product-image {
+    width: auto;
+    height: auto; }
+  .product-listing .cart {
+    margin-top: 7px; }
+
+.footer {
+  font-size: 18px;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: grey; }
+  .footer .admin-login {
+    margin-top: 10px; }
+    .footer .admin-login a {
+      color: #E0E0E0; }
+  .footer .contact-header {
+    color: #EEAC57; }
+  .footer .contact-info {
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */
