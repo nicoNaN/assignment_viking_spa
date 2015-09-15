@@ -1,6 +1,4 @@
-storefront.controller('storeCtrl', ['$scope',
-  function($scope) {
-
-    $scope.test = "hello";
-
+storefront.controller('storeCtrl', ['$scope', 'products',
+  function($scope, products) {
+    $scope.products = products;
 }]);

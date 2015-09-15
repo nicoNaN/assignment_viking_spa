@@ -6,13 +6,13 @@
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.0.1/faker.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body ng-controller="storeCtrl">
 
   <header class="container-fluid">
     <div class="row">
@@ -36,6 +36,10 @@
 
   <div ui-view>
   </div>
+
+  <ul>
+    <li ng-repeat="product in products">{{ product.name }}</li>
+  </ul>
 
   <footer class="footer">
     <div class="container">
@@ -64,5 +68,8 @@
 
 <!-- controllers -->
 <script src="javascripts/controllers/storeCtrl.js"></script>
+
+<!-- services -->
+<script src="javascripts/services/products.js"></script>
 
 </html>
