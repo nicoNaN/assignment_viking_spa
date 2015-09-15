@@ -6,6 +6,7 @@
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.5/angular-filter.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.0.1/faker.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -34,12 +35,16 @@
     </div>
   </header>
 
-  <div ui-view>
+  <div class="row">
+    <section class="col-sm-3 filter">
+      <select ng-model="filterType">
+        <option ng-repeat="option in products | unique: 'category'" value="{{option.category.name}}">{{option.category.name}}</option>
+      </select>
+    </section>
   </div>
 
-  <ul>
-    <li ng-repeat="product in products">{{ product.category.name }}</li>
-  </ul>
+  <div ui-view>
+  </div>
 
   <footer class="footer">
     <div class="container">
@@ -71,5 +76,8 @@
 
 <!-- services -->
 <script src="javascripts/services/products.js"></script>
+
+<!-- directives -->
+<script src="javascripts/directives/product.js"></script>
 
 </html>
