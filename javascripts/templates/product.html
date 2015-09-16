@@ -1,13 +1,3 @@
-<!-- <div class="row">
-  <section class="col-sm-4">
-    <div class="product-listing">
-      <h4 class="product-name">{{ product.name }}</h4>
-      <img class="img-responsive" src="https://cldup.com/ShPQGnEA1I.jpg">
-      <button class="btn btn-warning cart">Add to cart</button>
-    </div>
-  </section>
-</div> -->
-
 <div class="row">
   <div class="col-sm-12">
     <div class="row">
@@ -15,6 +5,7 @@
       <div class="col-sm-4">
         <div class="product-listing">
           <img class="img-responsive" src="https://cldup.com/ShPQGnEA1I.jpg">
+          <label>Quantity: <input name="productQuantity" ng-model="productQuantity"></label>
           <button class="btn btn-warning cart" ng-click="addToCart(product)">Add to cart</button>
         </div>
       </div>

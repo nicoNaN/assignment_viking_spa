@@ -1,14 +1,19 @@
 storefront.factory('shoppingCart', function() {
   var obj = {};
+  obj.products = {};
 
   obj.listAll = function() {
-    return;
+    return obj.products;
   };
 
-  obj.addItem = function(object) {
-    obj[object.name] = 1;
+  obj.getQuantity = function(name) {
+    return obj.products[name];
+  }
+
+  obj.addItem = function(object, quantity) {
+    obj.products[object.name] = quantity;
     // debug
-    console.log(obj[object.name]);
+    console.log(obj.products[object.name]);
   };
 
   obj.removeItem = function() {
