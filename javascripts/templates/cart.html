@@ -1,0 +1,40 @@
+<div class="row">
+  <section class="col-sm-12 cart-box">
+
+    <div class="container-fluid">
+
+      <div class="row cart-product-listing" ng-repeat="(name, quantity) in cart">
+
+        <section class="col-sm-12">
+          <div class="product-info">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="img-responsive" src="https://cldup.com/ShPQGnEA1I.jpg">
+              </div>
+              <div class="col-sm-5">
+                <h3>{{ name }}</h3>
+              </div>
+              <div class="col-sm-3">
+                <h3>Quantity: <input name="quantity" ng-model="quantity"></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="row checkout">
+
+        <section class="checkout-buttons col-sm-12">
+          <div class="submit-checkout">
+            <button class="btn btn-primary">Check Out</button>
+            <br/>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+  </section>
+</div>

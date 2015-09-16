@@ -30,7 +30,7 @@
 .filter {
   margin-top: 20px;
   margin-bottom: 10px;
-  text-align: right; }
+  text-align: center; }
   .filter .filter-text {
     font-size: 18px; }
 
@@ -43,6 +43,8 @@
     padding: 10px;
     background-color: grey;
     color: white; }
+    .product-listing .product-name a {
+      color: white; }
   .product-listing .product-image {
     width: auto;
     height: auto; }
@@ -66,5 +68,24 @@
     color: #EEAC57; }
   .footer .contact-info {
     color: white; }
+
+.cart-title {
+  font-size: 46px; }
+
+.cart-box {
+  border: 3px solid grey;
+  padding: 5px;
+  box-sizing: border-box; }
+  .cart-box .product-info, .cart-box .product-quantities {
+    box-sizing: border-box;
+    border: 3px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.checkout {
+  text-align: center; }
+
+.checkout-buttons {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

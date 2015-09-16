@@ -5,8 +5,7 @@ storefront.controller('productCtrl', ['$scope', '$stateParams', 'products', 'sho
     $scope.productQuantity = $scope.cart.getQuantity($scope.product.name);
 
     $scope.addToCart = function() {
-      // alert('yeah');
       $scope.cart.addItem($scope.product, $scope.productQuantity);
-      console.log($scope.cart.listAll());
+      // console.log($scope.cart.listAll());
     };
 }]);

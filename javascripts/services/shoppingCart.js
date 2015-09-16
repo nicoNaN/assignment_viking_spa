@@ -12,8 +12,6 @@ storefront.factory('shoppingCart', function() {
 
   obj.addItem = function(object, quantity) {
     obj.products[object.name] = quantity;
-    // debug
-    console.log(obj.products[object.name]);
   };
 
   obj.removeItem = function() {

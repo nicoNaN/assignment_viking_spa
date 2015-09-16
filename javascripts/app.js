@@ -23,4 +23,10 @@ storefront.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "javascripts/templates/product.html",
       controller: "productCtrl"
     })
+
+    .state('cart', {
+      url: "/cart",
+      templateUrl: "javascripts/templates/cart.html",
+      controller: "cartCtrl"
+    })
 })

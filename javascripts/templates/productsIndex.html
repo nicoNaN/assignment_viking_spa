@@ -1,3 +1,20 @@
-<div class="row">
-  <product ng-repeat="product in products | filter:filterType" product="product" add-to-cart="addToCart(product)"></product>
-</div>
+<section ng-controller="storeCtrl">
+  <div class="row">
+    <section class="col-sm-12 call-to-action">
+      <p class="action"><em>Choose from among our lineup of fine items below</em></p>
+    </section>
+  </div>
+
+  <div class="row">
+    <section class="col-sm-12 filter">
+      <label>Filter by category: </label>
+      <select ng-model="filterType">
+        <option ng-repeat="option in products | unique: 'category'" value="{{option.category.name}}">{{option.category.name}}</option>
+      </select>
+    </section>
+  </div>
+
+  <div class="row">
+    <product ng-repeat="product in products | filter:filterType" product="product" add-to-cart="addToCart(product)"></product>
+  </div>
+</section>

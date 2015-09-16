@@ -15,6 +15,11 @@
 
 <body>
 
+  <nav class="navbar navbar-inverse">
+    <a ui-sref="products.index" class="navbar-brand">The Viking Store</a>
+    <p class="navbar-text pull-right"><a class="navbar-link" ui-sref="cart">Your cart</a></p>
+  </nav>
+
   <header class="container-fluid">
     <div class="row">
       <section class="col-sm-12 header">
@@ -27,21 +32,7 @@
         <h3 class="subtitle">The Best Viking Gear on the Whole Web</h3>
       </section>
     </div>
-
-    <div class="row">
-      <section class="col-sm-12 call-to-action">
-        <p class="action"><em>Choose from among our lineup of fine items below</em></p>
-      </section>
-    </div>
   </header>
-
-  <div class="row" ng-controller="storeCtrl">
-    <section class="col-sm-3 filter">
-      <select ng-model="filterType">
-        <option ng-repeat="option in products | unique: 'category'" value="{{option.category.name}}">{{option.category.name}}</option>
-      </select>
-    </section>
-  </div>
 
   <div ui-view>
   </div>
@@ -74,6 +65,7 @@
 <!-- controllers -->
 <script src="javascripts/controllers/storeCtrl.js"></script>
 <script src="javascripts/controllers/productCtrl.js"></script>
+<script src="javascripts/controllers/cartCtrl.js"></script>
 
 <!-- services -->
 <script src="javascripts/services/products.js"></script>
